@@ -126,14 +126,18 @@ footer {
 
 .imgContainer {
   display: flex;
-  justify-content: flex-end;
+  flex-direction:  column;
+  position: fixed;
+  right: 0;
+  top: 0;
   padding: 0;
-  height:50px;
+  height:auto;
+  margin: 1.6%;
 }
 
 .navImg {
   width: 40px;
-  margin-left: 2%;
+  margin-top: 10px;
 }
 
 .navImg:hover {

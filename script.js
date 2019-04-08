@@ -3,6 +3,7 @@
  let b = document.querySelector('body');
  let mainHeader = document.querySelector('.main-header');
  let nav = document.querySelector('nav');
+ let imgContainer = document.querySelector('.imgContainer');
 
  //icons
  let leftIcon = document.querySelector('#leftColumnIcon');
@@ -25,17 +26,21 @@
      nav.classList.remove('hideSideBar');
      mainContent.style.flex = '0 1 calc(82%)';
      window.addEventListener('scroll', fixSideBar, false);
+     imgContainer.style.right = "19%";
    }else {
      nav.classList.add('hideSideBar');
      mainContent.style.flex = '0 1 calc(100%)';
      mainContent.style.transition = 'all 0.3s ease-in 0.3s';
      window.removeEventListener('scroll', fixSideBar, false);
+     imgContainer.style.right = "0"; //check that
    }
  }
 
 //toggles the nav between right and left side of the screen
  function navRight(){
    if(b.style.flexDirection = "row") b.style.flexDirection = "row-reverse";
+   imgContainer.style.right = "19%"; //check that
+
    if(nav.classList.contains('hideSideBar')){
      nav.classList.remove('hideSideBar');
      mainContent.style.flex = '0 1 calc(82%)';
@@ -50,5 +55,5 @@
      mainContent.style.flex = '0 1 calc(82%)';
      window.addEventListener('scroll', fixSideBar, false);
     }
-
+    imgContainer.style.right = "0";//check that
  }
