@@ -5,56 +5,59 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link rel="stylesheet" href="styles/resets.css">
     <link rel="stylesheet" href="styles/stylesheet.css">
-    <script src="script.js" defer></script>
+    <script  src="JS/jquery.js" defer></script>
+    <script type="text/javascript" src="JS/script.js" defer></script>
     <title>HTML5 Basics</title>
   </head>
   <body style="flex-direction: row">
+
     <!-- NAV -->
-      <nav id="navbar" class="navbar">
-        <header class="main-header">HTML5 Basics</header>
-        <ul class="nav-ul">
-          <a class="nav-link" href="">
-            <li>Introduction</li>
-          </a>
-          <a class="nav-link" href="">
-            <li>What should you know?</li>
-          </a>
-          <a class="nav-link" href="">
-            <li>What is HTML?</li>
-          </a>
-          <a class="nav-link" href="">
-            <li>What is a tag</li>
-          </a>
-          <a class="nav-link" href="">
-            <li>The <em>&lt;!DOCTYPE html&gt;</em> tag</li>
-          </a>
-          <a class="nav-link" href="">
-            <li>The <em>&lt;html&gt;</em> tag</li>
-          </a>
-          <a class="nav-link" href="">
-            <li>The <em>&lt;head&gt;</em> tag</li>
-          </a>
-          <a class="nav-link" href="">
-            <li>The &lt;meta&gt; tag</li>
-          </a>
-          <a class="nav-link" href="">
-            <li>The &lt;title&gt; tag</li>
-          </a>
-          <a class="nav-link" href="">
-            <li>The &lt;body&gt; tag</li>
-          </a>
-          <a class="nav-link" href="#h1Tag">
-            <li>The &lt;h1&gt; tag</li>
-          </a>
-          <a class="nav-link" href="">
-            <li>The &lt;header&gt; tag</li>
-          </a>
-        </ul>
-      </nav>
+    <nav id="navbar" class="navbar">
+      <header class="main-header">HTML5 Basics</header>
+      <ul class="nav-ul">
+        <a class="nav-link" href="#introduction">
+          <li>Introduction</li>
+        </a>
+        <a class="nav-link" href="#What_Should_You_Already_Know?">
+          <li>What should you already know?</li>
+        </a>
+        <a class="nav-link" href="#What_is_HTML?">
+          <li>What is HTML?</li>
+        </a>
+        <a class="nav-link" href="#What_does_tag_mean?">
+          <li>What does tag mean?</li>
+        </a>
+        <a class="nav-link" href="#The_<!DOCTYPE_html>_tag">
+          <li>The <em>&lt;!DOCTYPE html&gt;</em> tag</li>
+        </a>
+        <a class="nav-link" href="#The_<html>_tag">
+          <li>The <em>&lt;html&gt;</em> tag</li>
+        </a>
+        <a class="nav-link" href="#The_<head>_tag">
+          <li>The <em>&lt;head&gt;</em> tag</li>
+        </a>
+        <a class="nav-link" href="#The_<meta>_tag">
+          <li>The <em>&lt;meta&gt;</em> tag</li>
+        </a>
+        <a class="nav-link" href="#The_<title>_tag">
+          <li>The <em>&lt;title&gt;</em> tag</li>
+        </a>
+        <a class="nav-link" href="#The_<body>_tag">
+          <li>The <em>&lt;body&gt;</em> tag</li>
+        </a>
+        <a class="nav-link" href="#The_headings_tags">
+          <li>The <em>headings</em> tags</li>
+        </a>
+        <a class="nav-link" href="#The_<header>_tag">
+          <li>The <em>&lt;header&gt;</em> tag</li>
+        </a>
+      </ul>
+    </nav>
 
     <!-- MAIN CONTENT -->
     <main id="main-doc">
 
+      <!-- SVG container -->
       <div class="imgContainer">
         <img id="leftColumnIcon" class="navImg" src="/svg icons/leftColumnIcon.svg">
         <img id="rightColumnIcon" class="navImg" src="/svg icons/rightColumnIcon.svg">
@@ -62,7 +65,7 @@
       </div>
 
       <!-- Introduction -->
-      <section class="main-section" id="tag">
+      <section class="main-section" id="introduction">
         <header>Introduction</header>
         <article class="articleContent">
           <p>HTML is the language of the web, the building blocks behind any pages you can see online.
@@ -73,10 +76,10 @@
             <li> - Display the contents of a website</li>
           </ul>
           </article>
-        </section>
+      </section>
 
-      <!-- SECTION 0 -->
-      <section class="main-section" id="tag">
+      <!-- SECTION 0: What Should you already know -->
+      <section class="main-section" id="What_Should_You_Already_Know?">
         <header>What Should You Already Know?</header>
         <article class="articleContent">
           <p></p>
@@ -88,10 +91,10 @@
             <li> - How to use a browser</li>
           </ul>
           </article>
-        </section>
+      </section>
 
-      <!-- SECTION 1 -->
-      <section class="main-section" id="whatHTML">
+      <!-- SECTION 1: What is HTML -->
+      <section class="main-section" id="What_is_HTML?">
         <header>What is HTML?</header>
         <article class="articleContent">
           <p>HTML, which stands for HyperText Markup Language, is not exactly a programming language, but a markup language.</p>
@@ -105,8 +108,8 @@
         </article>
       </section>
 
-      <!-- SECTION 2 -->
-      <section class="main-section" id="tag">
+      <!-- SECTION 2:  What is HTML tag-->
+      <section class="main-section" id="What_does_tag_mean?">
         <header>What does <em>tag</em> mean?</header>
         <article class="articleContent">
           <p>A <em>tag</em> is a piece of information about the elements contained on a HTML file. It is a piece of text wrapped
@@ -120,26 +123,25 @@
         </article>
       </section>
 
-      <!-- SECTION 3 -->
-      <section class="main-section" id="tag">
+      <!-- SECTION 3: doctype -->
+      <section class="main-section" id="The_<!DOCTYPE_html>_tag">
         <header>The <em>&lt;!DOCTYPE html&gt;</em> tag</header>
         <article class="articleContent">
-          <p></p>
-          <p></p>
-          <code><span class="tags">&lt;!DOCTYPE html&gt;</span></code>
-          <ul>
-            <li></li>
-            <li></li>
-          </ul>
-          </article>
-        </section>
+          <p>The &lt;!DOCTYPE html&gt; is not really a tag, it is an instruction to the browser to interpret all the code
+          following it as a certain version of <em>html</em></p>
+          <p>It needs always to be added according to the type of <em>html</em> that the document was written in.</p>
+          <code><span class="tags">&lt;!DOCTYPE html&gt;</span></br>code follows this one ...</code>
+        </article>
+      </section>
 
-      <!-- SECTION 4 -->
-      <section class="main-section" id="htmlTag">
+      <!-- SECTION 4: HTML tag -->
+      <section class="main-section" id="The_<html>_tag">
         <header>The <em>&lt;html&gt;</em> tag</header>
+
         <article class="articleContent">
-          <p></p>
-          <p></p>
+          <p>The HTML tag is the root of all document, it wraps all the content, both what is display and what is not</p>
+          <p>It is the beginning of the <em>html</em> document and contains all the other elements.</p>
+
           <code><span class="tags">&lt;html&gt;</span><br/>
             ...Page content goes here, enclosed by the "html" tag<br/>
             ...<br/>
@@ -151,68 +153,59 @@
         </article>
       </section>
 
-      <!-- SECTION 5 -->
-      <section class="main-section" id="headTag">
+      <!-- SECTION 5: Head tag -->
+      <section class="main-section" id="The_<head>_tag">
         <header>The <em>&lt;head&gt;</em> tag</header>
         <article class="articleContent">
-          <p></p>
-          <p></p>
-          <code><span class="tags">&lt;head&gt;</span><span class="tags">&lt;/head&gt;</span></code>
-          <ul>
-            <li></li>
-            <li></li>
-          </ul>
+
+          <p>The <em>head</em> tag opens the document and comes just after the <em>html</em> tag.</p>
+          <p>It contains all <em>head</em> elements, most of which are not display and have only instructions for the
+           browser on how to render the page or links for external scripts and stylesheets. The exception to this is the
+         <em>title</em> element, which is displayed on the head of the window tab.</p>
+
+          <code><span class="tags">&lt;head&gt;</span></br></br>link, meta, title and script elements go here</br></br><span class="tags">&lt;/head&gt;</span></code>
         </article>
       </section>
 
-      <!-- SECTION 6 -->
-      <section class="main-section" id="metaTag">
+      <!-- SECTION 6: Meta tag -->
+      <section class="main-section" id="The_<meta>_tag">
         <header>The &lt;meta&gt; tag</header>
         <article class="articleContent">
-          <p></p>
-          <p></p>
-          <code><span class="tags">&lt;meta&gt;</span><span class="tags">&lt;/meta&gt;</span></code>
-          <ul>
-            <li></li>
-            <li></li>
-          </ul>
+          <p>The <em>meta</em> tag is non-displayable and contains informations about data, like keywords document type, times pf access and the kind.</p>
+          <p>It can also be used nowadays for web developers to have control over the viewport.</p>
+          <code><span class="tags">&lt;meta&gt;</span></br></br>All data information</br></br><span class="tags">&lt;/meta&gt;</span></code>
         </article>
       </section>
 
-      <!-- SECTION 7 -->
-      <section class="main-section" id="titleTag">
+      <!-- SECTION 7: Title tag -->
+      <section class="main-section" id="The_<title>_tag">
         <header>The &lt;title&gt; tag</header>
         <article class="articleContent">
-          <p></p>
-          <p></p>
-          <code><span class="tags">&lt;title&gt;</span><span class="tags">&lt;/title&gt;</span></code>
-          <ul>
-            <li></li>
-            <li></li>
-          </ul>
+          <p>The <em>title</em> goes inside the <em>head</em> but, differently than other elements located in the <em>head</em>, it is displayed.</p>
+          <p>It is required in all <em>html</em> documents and displays its name in the brwoser's tab, as well as in search engines.</p>
+          <code><span class="tags">&lt;title&gt;</span>Page's title<span class="tags">&lt;/title&gt;</span></code>
         </article>
       </section>
 
-      <!-- SECTION 8 -->
-      <section class="main-section" id="body">
+      <!-- SECTION 8: Body Tag -->
+      <section class="main-section" id="The_<body>_tag">
         <header>The &lt;body&gt; tag</header>
         <article class="articleContent">
-          <p></p>
-          <p></p>
-          <code><span class="tags">&lt;body&gt;</span><span class="tags">&lt;/body&gt;</span></code>
-          <ul>
-            <li></li>
-            <li></li>
-          </ul>
+          <p>The <em>body</em> tag wraps all the visual elements of a page.</p>
+          <p>It contains text, images, videos, and all the contents displayed on any web page.</p>
+          <code><span class="tags">&lt;body&gt;</span></br></br>Page content displayed in the browser...</br></br><span class="tags">&lt;/body&gt;</span></code>
         </article>
       </section>
 
-      <!-- SECTION 9 -->
-      <section class="main-section" id="h1Tag">
-        <header>The &lt;h1&gt; tag</header>
+      <!-- SECTION 9: Headings -->
+      <section class="main-section" id="The_headings_tags">
+        <header>The headings tags</header>
         <article class="articleContent">
-          <p></p>
-          <p></p>
+          <p>The heading tags are abreviated by the h and decrease in importance and font size from the number 1 to 6. The &lt;h1&gt; tag
+          is the most important and the one that display the text it wraps in a bigger size. The &lt;h6&gt; is the least important and displays
+        the text on a smaller size. </p>
+          <p>Heading are very important to give semantic meaning when organizing your HTML document. Specially for accessibility reasons when someone
+          might be using a screen header to access the webpage. Thens those tag are mainly used to give structure to the text.</p>
           <code>
             <span class="tags">&lt;h1&gt;</span>heading<span class="tags">&lt;/h1&gt;</span></br>
             <span class="tags">&lt;h2&gt;</span>heading<span class="tags">&lt;/h2&gt;</span></br>
@@ -221,24 +214,16 @@
             <span class="tags">&lt;h5&gt;</span>heading<span class="tags">&lt;/h5&gt;</span></br>
             <span class="tags">&lt;h6&gt;</span>heading<span class="tags">&lt;/h6&gt;</span>
           </code>
-          <ul>
-            <li></li>
-            <li></li>
-          </ul>
         </article>
       </section>
 
-      <!-- SECTION 10 -->
-      <section class="main-section" id="headerTag">
+      <!-- SECTION 10: Header tag -->
+      <section class="main-section" id="The_<header>_tag">
         <header>The &lt;header&gt; tag</header>
         <article class="articleContent">
-          <p></p>
-          <p></p>
+          <p>The <em>header</em> tag defines the header of a page or the top part of a section within it.</p>
+          <p>It is also import as it gives semantic mening to the html document and helps to make it more accessible.</p>
           <code><span class="tags">&lt;header&gt;</span>heading<span class="tags">&lt;/header&gt;</span></code>
-          <ul>
-            <li></li>
-            <li></li>
-          </ul>
         </article>
       </section>
 
